@@ -4,7 +4,7 @@ import uvicorn
 from pydantic import BaseModel
 
 # Load the trained AI model
-with open("model/model.pkl", "rb") as f:
+with open("deanonymizationprevention/backend/model/model.pkl", "rb") as f:
     model = pickle.load(f)
 
 # Define the FastAPI app
